@@ -14,7 +14,7 @@ services:
       - /path/to/data/folder:/data
       - /path/to/shared-images/folder:/shared-images
   ids-frontend:
-    image: "cyosp/ids-frontend:2.1.1"
+    image: "cyosp/ids-frontend:2.1.2"
     container_name: ids-frontend
     environment:
       BACKEND_LOCATION: "http://localhost:8888"
