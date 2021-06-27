@@ -8,16 +8,17 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
   ids-backend:
-    image: "cyosp/ids-backend:1.0.0"
+    image: "cyosp/ids-backend:1.2.0"
     container_name: ids-backend
     volumes:
-      - /path/to/config/folder:/config
+      - /path/to/data/folder:/data
       - /path/to/shared-images/folder:/shared-images
   ids-frontend:
-    image: "cyosp/ids-frontend:1.0.2"
+    image: "cyosp/ids-frontend:2.1.1"
     container_name: ids-frontend
     environment:
       BACKEND_LOCATION: "http://localhost:8888"
+      SHARING_TITLE: "My custom sharing title"
       DIRECTORY_REVERSED_ORDER: "true"
       PREVIEW_DIRECTORY_REVERSED_ORDER: "false"
       MIX_DIRECTORIES_AND_IMAGES: "false"
