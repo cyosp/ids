@@ -11,6 +11,17 @@ It's composed of two parts :
 
 Which are combined in this repository in a single way.
 
+## Features demonstration
+
+ * Delete image (administrator only)
+
+   ![Demo delete image feature](features-demo/delete-image.gif)
+
+   Demonstration key points:
+    * Confirm delete dialog canceled
+    * Delete failed
+    * Delete succeeded
+
 ## Start
 
 Start IDS on port `8888` via: `docker-compose up -d`
