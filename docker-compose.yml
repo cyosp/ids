@@ -8,13 +8,13 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
   ids-backend:
-    image: "cyosp/ids-backend:5.0.0"
+    image: "cyosp/ids-backend:6.0.0"
     container_name: ids-backend
     volumes:
       - /path/to/data/folder:/data
       - /path/to/shared-images/folder:/shared-images
   ids-frontend:
-    image: "cyosp/ids-frontend:6.2.0"
+    image: "cyosp/ids-frontend:8.1.0"
     container_name: ids-frontend
     environment:
       BACKEND_LOCATION: "http://localhost:8888"
